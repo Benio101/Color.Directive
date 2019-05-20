@@ -36,7 +36,9 @@ namespace Color.Directive
 		private readonly IClassificationType Directive_Name;
 		private readonly IClassificationType Directive_Desc;
 		private readonly IClassificationType Directive_Pragma;
+		private readonly IClassificationType Directive_Pragma_Desc;
 		private readonly IClassificationType Directive_Pragma_Region;
+		private readonly IClassificationType Directive_Pragma_Region_Desc;
 		private readonly IClassificationType Directive_Pragma_EndRegion;
 		private readonly IClassificationType Directive_Pragma_public;
 		private readonly IClassificationType Directive_Pragma_protected;
@@ -59,13 +61,18 @@ namespace Color.Directive
 			Directive_Hash = Registry.GetClassificationType("Directive.Hash");
 			Directive_Name = Registry.GetClassificationType("Directive.Name");
 			Directive_Desc = Registry.GetClassificationType("Directive.Desc");
-			Directive_Desc = Registry.GetClassificationType("Directive.Desc");
 
 			Directive_Pragma =
 			Registry.GetClassificationType("Directive.Pragma");
 
+			Directive_Pragma_Desc =
+			Registry.GetClassificationType("Directive.Pragma.Desc");
+
 			Directive_Pragma_Region =
 			Registry.GetClassificationType("Directive.Pragma.Region");
+
+			Directive_Pragma_Region_Desc =
+			Registry.GetClassificationType("Directive.Pragma.Region.Desc");
 
 			Directive_Pragma_EndRegion =
 			Registry.GetClassificationType("Directive.Pragma.EndRegion");
@@ -189,13 +196,20 @@ namespace Color.Directive
 
 						if (Match.Groups["Desc"].Length > 0)
 						{
+							Spans.Add(new ClassificationSpan(new SnapshotSpan(
+								Span.Snapshot, new Span(
+									Span.Start + Match.Groups["Desc"].Index,
+									Match.Groups["Desc"].Length
+								)), Directive_Pragma_Desc
+							));
+
 							var RegionMatch = Regex.Match
 							(
 								Match.Groups["Desc"].Value,
 								"^(?<Region>region)[ \t\v\f]*(?<Desc>.*)"
 							);
 
-							if (Match.Groups["Region"].Length > 0)
+							if (RegionMatch.Groups["Region"].Length > 0)
 							{
 								Spans.Add(new ClassificationSpan(new SnapshotSpan(
 									Span.Snapshot, new Span(
@@ -205,6 +219,17 @@ namespace Color.Directive
 
 										RegionMatch.Groups["Region"].Length
 									)), Directive_Pragma_Region
+								));
+
+								if (RegionMatch.Groups["Desc"].Length > 0)
+								Spans.Add(new ClassificationSpan(new SnapshotSpan(
+									Span.Snapshot, new Span(
+											Span.Start
+										+	Match.Groups["Desc"].Index
+										+	RegionMatch.Groups["Desc"].Index,
+
+										RegionMatch.Groups["Desc"].Length
+									)), Directive_Pragma_Region_Desc
 								));
 							}
 
@@ -340,8 +365,6 @@ namespace Color.Directive
 								}
 							}
 						}
-
-						if (Match.Groups["Desc"].Length <= 0) continue;
 
 						if(
 								Match.Groups["Desc"].Length > 0

@@ -9,6 +9,7 @@
 			"struct",
 			"union",
 			"concept",
+			"macro",
 		};
 
 		internal static readonly string[] RegionGroups =

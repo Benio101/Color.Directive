@@ -38,9 +38,19 @@ namespace Color.Directive
 		Definition_Directive_Pragma;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Desc;
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.namespace.Name")]
@@ -91,6 +101,16 @@ namespace Color.Directive
 		[Name("Directive.Pragma.Region.concept.Desc")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_concept_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.macro.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_macro_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.macro.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_macro_Desc;
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.EndRegion")]
