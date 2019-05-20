@@ -12,8 +12,8 @@ namespace Color.Directive
 		){
 			return
 			(
-					Source.Length != 0
-				&&	Search.Length != 0
+					Source.Length > 0
+				&&	Search.Length > 0
 				&&	(
 						from SourceClassification in Source
 						from SearchClassification in Search
