@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 
@@ -10,8 +9,8 @@ namespace Color.Directive
 {
 	public class RegionType
 	{
-		public IClassificationType Name;
-		public IClassificationType Desc;
+		public readonly IClassificationType Name;
+		public readonly IClassificationType Desc;
 
 		public RegionType(
 			IClassificationType Name,
@@ -21,7 +20,7 @@ namespace Color.Directive
 			this.Desc = Desc;
 		}
 	}
-	
+
 	internal class Classifier
 		: IClassifier
 	{
@@ -80,7 +79,7 @@ namespace Color.Directive
 			Directive_Pragma_private =
 			Registry.GetClassificationType("Directive.Pragma.Region.private");
 
-			foreach (string Type in Meta.RegionTypes){
+			foreach (var Type in Meta.RegionTypes){
 				RegionTypes.Add(Type, new RegionType(
 					Registry.GetClassificationType
 					("Directive.Pragma.Region." + Type + ".Name"),
@@ -90,7 +89,7 @@ namespace Color.Directive
 				));
 			}
 
-			foreach (string Group in Meta.RegionGroups){
+			foreach (var Group in Meta.RegionGroups){
 				RegionGroups.Add(
 					Group, Registry.GetClassificationType("Directive.Pragma.Region." + Group)
 				);
@@ -116,7 +115,7 @@ namespace Color.Directive
 			IList<ClassificationSpan> Spans = new List<ClassificationSpan>();
 
 			if (Span.IsEmpty) return Spans;
-			string Text = Span.GetText();
+			var Text = Span.GetText();
 
 			foreach (Match Match in new Regex(
 				@"(?<Hash>#)(?<Name>[^ \t\v\f]*)[ \t\v\f]*(?<Desc>.*)"
@@ -128,20 +127,20 @@ namespace Color.Directive
 				));
 
 				var Intersections = IClassifier.GetClassificationSpans(MatchedSpan);
-				foreach (ClassificationSpan Intersection in Intersections){
+				foreach (var Intersection in Intersections){
 					var Classifications = Intersection.ClassificationType.Classification.Split(
 						new[]{" - "}, StringSplitOptions.None
 					);
 
 					// Comment must be classified as "cppLocalVariable".
-					if (!Utils.IsClassifiedAs(Classifications, new string[]{
+					if (!Utils.IsClassifiedAs(Classifications, new[]{
 						"preprocessor keyword"
 					})){
 						goto SkipVariable;
 					}
 
 					// Prevent matching attributes.
-					if (Utils.IsClassifiedAs(Classifications, new string[]{
+					if (Utils.IsClassifiedAs(Classifications, new[]{
 						"Attribute"
 					})){
 						goto SkipVariable;
@@ -254,7 +253,7 @@ namespace Color.Directive
 										RegexOptions.IgnoreCase
 									|	RegexOptions.Compiled
 								);
-								
+
 								if (publicMatch.Success)
 								{
 									Spans.Add(new ClassificationSpan(new SnapshotSpan(
@@ -277,7 +276,7 @@ namespace Color.Directive
 										RegexOptions.IgnoreCase
 									|	RegexOptions.Compiled
 								);
-								
+
 								if (protectedMatch.Success)
 								{
 									Spans.Add(new ClassificationSpan(new SnapshotSpan(
@@ -300,7 +299,7 @@ namespace Color.Directive
 										RegexOptions.IgnoreCase
 									|	RegexOptions.Compiled
 								);
-								
+
 								if (privateMatch.Success)
 								{
 									Spans.Add(new ClassificationSpan(new SnapshotSpan(
@@ -324,7 +323,7 @@ namespace Color.Directive
 											RegexOptions.IgnoreCase
 										|	RegexOptions.Compiled
 									);
-								
+
 									if (GroupMatch.Success)
 									{
 										Spans.Add(new ClassificationSpan(new SnapshotSpan(
@@ -342,18 +341,18 @@ namespace Color.Directive
 							}
 						}
 
-						if (Match.Groups["Desc"].Length > 0){
-							if(
-									Match.Groups["Desc"].Length > 0
-								&&	Match.Groups["Desc"].Value.StartsWith("endregion")
-							){
-								Spans.Add(new ClassificationSpan(new SnapshotSpan(
-									Span.Snapshot, new Span(
-										Span.Start + Match.Groups["Desc"].Index,
-										Match.Groups["Desc"].Length
-									)), Directive_Pragma_EndRegion
-								));
-							}
+						if (Match.Groups["Desc"].Length <= 0) continue;
+
+						if(
+								Match.Groups["Desc"].Length > 0
+							&&	Match.Groups["Desc"].Value.StartsWith("endregion")
+						){
+							Spans.Add(new ClassificationSpan(new SnapshotSpan(
+								Span.Snapshot, new Span(
+									Span.Start + Match.Groups["Desc"].Index,
+									Match.Groups["Desc"].Length
+								)), Directive_Pragma_EndRegion
+							));
 						}
 					}
 				}

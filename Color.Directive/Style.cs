@@ -1,12 +1,7 @@
-﻿using System;
-using System.ComponentModel.Composition;
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
+﻿using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
-using System.Windows.Controls;
 
 namespace Color.Directive
 {
