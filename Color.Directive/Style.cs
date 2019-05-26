@@ -428,7 +428,7 @@ namespace Color.Directive
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"macro\": Description";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Type;
+			ForegroundColor = Default.Colors.Macro;
 		}
 	}
 
