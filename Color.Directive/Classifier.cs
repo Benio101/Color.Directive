@@ -236,11 +236,18 @@ namespace Color.Directive
 							if (RegionMatch.Groups["Desc"].Length > 0)
 							{
 								var Body = RegionMatch.Groups["Desc"].Value;
-								foreach (var Type in Meta.RegionTypes){
+								foreach (var Type in Meta.RegionTypes)
+								{
+									var TypeRegex = Type;
+									if (TypeRegex == "enum")
+									{
+										TypeRegex = "enum([ \t\v\f]+class)?";
+									}
+
 									var BodyMatch = Regex.Match
 									(
 										Body,
-										"^(?<Type>" + Type + ")[ \t\v\f]*(?<Desc>.*)"
+										"^(?<Type>" + TypeRegex + ")[ \t\v\f]*(?<Desc>.*)"
 									);
 
 									if (BodyMatch.Success)
@@ -339,11 +346,18 @@ namespace Color.Directive
 									));
 								}
 
-								foreach(var Group in Meta.RegionGroups){
+								foreach (var Group in Meta.RegionGroups)
+								{
+									var GroupRegex = Group;
+									if (GroupRegex == "Enums")
+									{
+										GroupRegex = "(Enums|Enum Classes)";
+									}
+
 									var GroupMatch = Regex.Match
 									(
 										Body,
-										"(?<!\\w)(?<Group>" + Group + ")(?!\\w)",
+										"(?<!\\w)(?<Group>" + GroupRegex + ")(?!\\w)",
 
 											RegexOptions.IgnoreCase
 										|	RegexOptions.Compiled

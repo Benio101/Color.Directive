@@ -113,6 +113,186 @@ namespace Color.Directive
 		Definition_Directive_Pragma_Region_macro_Desc;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.using.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_using_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.using.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_using_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.friend.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_friend_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.friend.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_friend_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.enum.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_enum_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.enum.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_enum_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.component.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_component_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.component.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_component_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.member.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_member_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.member.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_member_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.property.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_property_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.property.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_property_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.delegate.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_delegate_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.delegate.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_delegate_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.field.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_field_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.field.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_field_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.special.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_special_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.special.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_special_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.constructor.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_constructor_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.constructor.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_constructor_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.operator.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_operator_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.operator.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_operator_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.conversion.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_conversion_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.conversion.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_conversion_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.override.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_override_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.override.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_override_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.method.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_method_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.method.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_method_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.event.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_event_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.event.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_event_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.getter.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_getter_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.getter.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_getter_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.setter.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_setter_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.setter.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_setter_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.function.Name")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_function_Name;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.function.Desc")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_function_Desc;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.EndRegion")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_EndRegion;
@@ -133,6 +313,16 @@ namespace Color.Directive
 		Definition_Directive_Pragma_Region_private;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Headers")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Headers;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Meta")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Meta;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Usings")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_Usings;
@@ -143,9 +333,29 @@ namespace Color.Directive
 		Definition_Directive_Pragma_Region_Friends;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Enums")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Enums;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Components")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Components;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Members")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_Members;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Properties")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Properties;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Delegates")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Delegates;
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Fields")]
@@ -173,9 +383,29 @@ namespace Color.Directive
 		Definition_Directive_Pragma_Region_Conversions;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Overrides")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Overrides;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Methods")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_Methods;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Events")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Events;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Getters")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Getters;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Setters")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Setters;
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Functions")]
