@@ -241,7 +241,7 @@ namespace Color.Directive
 									var TypeRegex = Type;
 									if (TypeRegex == "enum")
 									{
-										TypeRegex = "enum([ \t\v\f]+class)?";
+										TypeRegex = "enum([ \t\v\f]+(class|struct))?";
 									}
 
 									var BodyMatch = Regex.Match
@@ -351,7 +351,7 @@ namespace Color.Directive
 									var GroupRegex = Group;
 									if (GroupRegex == "Enums")
 									{
-										GroupRegex = "(Enums|Enum Classes)";
+										GroupRegex = "(Enums|Enum ([Cc]lasses|[Ss]tructs))";
 									}
 
 									var GroupMatch = Regex.Match
