@@ -1379,6 +1379,28 @@ namespace Color.Directive
 	}
 
 	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Macros")]
+	[Name("Directive.Pragma.Region.Macros")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
+	[UserVisible(true)]
+	[Order(After = PredefinedClassificationTypeNames.Identifier)]
+	[Order(After = "cppLocalVariable")]
+	[Order(After = Priority.High)]
+	[Order(After = "Directive")]
+	[Order(After = "Directive.Desc")]
+	[Order(After = "Directive.Pragma.Region")]
+	internal sealed class Format_Directive_Pragma_Region_Macros
+		: ClassificationFormatDefinition
+	{
+		public Format_Directive_Pragma_Region_Macros(){
+			DisplayName = "C++ Directive: \"pragma\": Macros";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Macro;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
 	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Friends")]
 	[Name("Directive.Pragma.Region.Friends")]
 	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
@@ -1441,6 +1463,94 @@ namespace Color.Directive
 
 			BackgroundCustomizable = false;
 			ForegroundColor = Default.Colors.Import;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Concepts")]
+	[Name("Directive.Pragma.Region.Concepts")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
+	[UserVisible(true)]
+	[Order(After = PredefinedClassificationTypeNames.Identifier)]
+	[Order(After = "cppLocalVariable")]
+	[Order(After = Priority.High)]
+	[Order(After = "Directive")]
+	[Order(After = "Directive.Desc")]
+	[Order(After = "Directive.Pragma.Region")]
+	internal sealed class Format_Directive_Pragma_Region_Concepts
+		: ClassificationFormatDefinition
+	{
+		public Format_Directive_Pragma_Region_Concepts(){
+			DisplayName = "C++ Directive: \"pragma\": Concepts";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Type;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Classes")]
+	[Name("Directive.Pragma.Region.Classes")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
+	[UserVisible(true)]
+	[Order(After = PredefinedClassificationTypeNames.Identifier)]
+	[Order(After = "cppLocalVariable")]
+	[Order(After = Priority.High)]
+	[Order(After = "Directive")]
+	[Order(After = "Directive.Desc")]
+	[Order(After = "Directive.Pragma.Region")]
+	internal sealed class Format_Directive_Pragma_Region_Classes
+		: ClassificationFormatDefinition
+	{
+		public Format_Directive_Pragma_Region_Classes(){
+			DisplayName = "C++ Directive: \"pragma\": Classes";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Type;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Structs")]
+	[Name("Directive.Pragma.Region.Structs")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
+	[UserVisible(true)]
+	[Order(After = PredefinedClassificationTypeNames.Identifier)]
+	[Order(After = "cppLocalVariable")]
+	[Order(After = Priority.High)]
+	[Order(After = "Directive")]
+	[Order(After = "Directive.Desc")]
+	[Order(After = "Directive.Pragma.Region")]
+	internal sealed class Format_Directive_Pragma_Region_Structs
+		: ClassificationFormatDefinition
+	{
+		public Format_Directive_Pragma_Region_Structs(){
+			DisplayName = "C++ Directive: \"pragma\": Structs";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Type;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Directive.Pragma.Region.Unions")]
+	[Name("Directive.Pragma.Region.Unions")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Identifier)]
+	[UserVisible(true)]
+	[Order(After = PredefinedClassificationTypeNames.Identifier)]
+	[Order(After = "cppLocalVariable")]
+	[Order(After = Priority.High)]
+	[Order(After = "Directive")]
+	[Order(After = "Directive.Desc")]
+	[Order(After = "Directive.Pragma.Region")]
+	internal sealed class Format_Directive_Pragma_Region_Unions
+		: ClassificationFormatDefinition
+	{
+		public Format_Directive_Pragma_Region_Unions(){
+			DisplayName = "C++ Directive: \"pragma\": Unions";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Type;
 		}
 	}
 

@@ -328,6 +328,11 @@ namespace Color.Directive
 		Definition_Directive_Pragma_Region_Usings;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Macros")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Macros;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Friends")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_Friends;
@@ -341,6 +346,26 @@ namespace Color.Directive
 		[Name("Directive.Pragma.Region.Components")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Directive_Pragma_Region_Components;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Concepts")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Concepts;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Classes")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Classes;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Structs")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Structs;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Directive.Pragma.Region.Unions")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Directive_Pragma_Region_Unions;
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Directive.Pragma.Region.Members")]
