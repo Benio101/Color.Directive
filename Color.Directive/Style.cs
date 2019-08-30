@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.Composition;
-using Microsoft.VisualStudio.Language.StandardClassification;
+﻿using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
+using System.ComponentModel.Composition;
 
 namespace Color.Directive
 {
@@ -16,7 +16,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive(){
+		public Format_Directive()
+		{
 			DisplayName = "C++ Directive";
 
 			BackgroundCustomizable = false;
@@ -36,7 +37,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Hash
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Hash(){
+		public Format_Directive_Hash()
+		{
 			DisplayName = "C++ Directive: \"#\"";
 
 			BackgroundCustomizable = false;
@@ -56,7 +58,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Name(){
+		public Format_Directive_Name()
+		{
 			DisplayName = "C++ Directive: Name";
 
 			BackgroundCustomizable = false;
@@ -76,7 +79,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Desc(){
+		public Format_Directive_Desc()
+		{
 			DisplayName = "C++ Directive: Description";
 
 			BackgroundCustomizable = false;
@@ -97,7 +101,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma(){
+		public Format_Directive_Pragma()
+		{
 			DisplayName = "C++ Directive: \"pragma\"";
 
 			BackgroundCustomizable = false;
@@ -118,7 +123,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Desc(){
+		public Format_Directive_Pragma_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": ​Description";
 
 			BackgroundCustomizable = false;
@@ -139,7 +145,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region(){
+		public Format_Directive_Pragma_Region()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\"";
 
 			BackgroundCustomizable = false;
@@ -160,7 +167,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Desc(){
+		public Format_Directive_Pragma_Region_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": Description";
 
 			BackgroundCustomizable = false;
@@ -182,7 +190,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_namespace_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_namespace_Name(){
+		public Format_Directive_Pragma_Region_namespace_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"namespace\"";
 
 			BackgroundCustomizable = false;
@@ -204,7 +213,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_namespace_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_namespace_Desc(){
+		public Format_Directive_Pragma_Region_namespace_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"namespace\": Description";
 
 			BackgroundCustomizable = false;
@@ -226,7 +236,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_class_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_class_Name(){
+		public Format_Directive_Pragma_Region_class_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"class\"";
 
 			BackgroundCustomizable = false;
@@ -248,7 +259,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_class_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_class_Desc(){
+		public Format_Directive_Pragma_Region_class_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"class\": Description";
 
 			BackgroundCustomizable = false;
@@ -270,7 +282,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_struct_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_struct_Name(){
+		public Format_Directive_Pragma_Region_struct_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"struct\"";
 
 			BackgroundCustomizable = false;
@@ -292,7 +305,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_struct_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_struct_Desc(){
+		public Format_Directive_Pragma_Region_struct_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"struct\": Description";
 
 			BackgroundCustomizable = false;
@@ -314,7 +328,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_union_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_union_Name(){
+		public Format_Directive_Pragma_Region_union_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"union\"";
 
 			BackgroundCustomizable = false;
@@ -336,7 +351,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_union_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_union_Desc(){
+		public Format_Directive_Pragma_Region_union_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"union\": Description";
 
 			BackgroundCustomizable = false;
@@ -358,7 +374,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_concept_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_concept_Name(){
+		public Format_Directive_Pragma_Region_concept_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"concept\"";
 
 			BackgroundCustomizable = false;
@@ -380,7 +397,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_concept_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_concept_Desc(){
+		public Format_Directive_Pragma_Region_concept_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"concept\": Description";
 
 			BackgroundCustomizable = false;
@@ -402,7 +420,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_macro_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_macro_Name(){
+		public Format_Directive_Pragma_Region_macro_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"macro\"";
 
 			BackgroundCustomizable = false;
@@ -424,7 +443,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_macro_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_macro_Desc(){
+		public Format_Directive_Pragma_Region_macro_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"macro\": Description";
 
 			BackgroundCustomizable = false;
@@ -446,7 +466,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_using_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_using_Name(){
+		public Format_Directive_Pragma_Region_using_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"using\"";
 
 			BackgroundCustomizable = false;
@@ -468,7 +489,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_using_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_using_Desc(){
+		public Format_Directive_Pragma_Region_using_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"using\": Description";
 
 			BackgroundCustomizable = false;
@@ -490,7 +512,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_friend_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_friend_Name(){
+		public Format_Directive_Pragma_Region_friend_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"friend\"";
 
 			BackgroundCustomizable = false;
@@ -512,7 +535,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_friend_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_friend_Desc(){
+		public Format_Directive_Pragma_Region_friend_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"friend\": Description";
 
 			BackgroundCustomizable = false;
@@ -534,7 +558,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_enum_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_enum_Name(){
+		public Format_Directive_Pragma_Region_enum_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"enum\"";
 
 			BackgroundCustomizable = false;
@@ -556,7 +581,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_enum_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_enum_Desc(){
+		public Format_Directive_Pragma_Region_enum_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"enum\": Description";
 
 			BackgroundCustomizable = false;
@@ -578,7 +604,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_component_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_component_Name(){
+		public Format_Directive_Pragma_Region_component_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"component\"";
 
 			BackgroundCustomizable = false;
@@ -600,7 +627,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_component_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_component_Desc(){
+		public Format_Directive_Pragma_Region_component_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"component\": Description";
 
 			BackgroundCustomizable = false;
@@ -622,7 +650,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_member_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_member_Name(){
+		public Format_Directive_Pragma_Region_member_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"member\"";
 
 			BackgroundCustomizable = false;
@@ -644,7 +673,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_member_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_member_Desc(){
+		public Format_Directive_Pragma_Region_member_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"member\": Description";
 
 			BackgroundCustomizable = false;
@@ -666,7 +696,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_property_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_property_Name(){
+		public Format_Directive_Pragma_Region_property_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"property\"";
 
 			BackgroundCustomizable = false;
@@ -688,7 +719,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_property_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_property_Desc(){
+		public Format_Directive_Pragma_Region_property_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"property\": Description";
 
 			BackgroundCustomizable = false;
@@ -710,7 +742,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_delegate_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_delegate_Name(){
+		public Format_Directive_Pragma_Region_delegate_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"delegate\"";
 
 			BackgroundCustomizable = false;
@@ -732,7 +765,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_delegate_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_delegate_Desc(){
+		public Format_Directive_Pragma_Region_delegate_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"delegate\": Description";
 
 			BackgroundCustomizable = false;
@@ -754,7 +788,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_field_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_field_Name(){
+		public Format_Directive_Pragma_Region_field_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"field\"";
 
 			BackgroundCustomizable = false;
@@ -776,7 +811,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_field_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_field_Desc(){
+		public Format_Directive_Pragma_Region_field_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"field\": Description";
 
 			BackgroundCustomizable = false;
@@ -798,7 +834,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_special_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_special_Name(){
+		public Format_Directive_Pragma_Region_special_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"special\"";
 
 			BackgroundCustomizable = false;
@@ -820,7 +857,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_special_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_special_Desc(){
+		public Format_Directive_Pragma_Region_special_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"special\": Description";
 
 			BackgroundCustomizable = false;
@@ -842,7 +880,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_constructor_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_constructor_Name(){
+		public Format_Directive_Pragma_Region_constructor_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"constructor\"";
 
 			BackgroundCustomizable = false;
@@ -864,7 +903,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_constructor_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_constructor_Desc(){
+		public Format_Directive_Pragma_Region_constructor_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"constructor\": Description";
 
 			BackgroundCustomizable = false;
@@ -886,7 +926,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_operator_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_operator_Name(){
+		public Format_Directive_Pragma_Region_operator_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"operator\"";
 
 			BackgroundCustomizable = false;
@@ -908,7 +949,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_operator_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_operator_Desc(){
+		public Format_Directive_Pragma_Region_operator_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"operator\": Description";
 
 			BackgroundCustomizable = false;
@@ -930,7 +972,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_conversion_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_conversion_Name(){
+		public Format_Directive_Pragma_Region_conversion_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"conversion\"";
 
 			BackgroundCustomizable = false;
@@ -952,7 +995,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_conversion_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_conversion_Desc(){
+		public Format_Directive_Pragma_Region_conversion_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"conversion\": Description";
 
 			BackgroundCustomizable = false;
@@ -974,7 +1018,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_override_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_override_Name(){
+		public Format_Directive_Pragma_Region_override_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"override\"";
 
 			BackgroundCustomizable = false;
@@ -996,7 +1041,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_override_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_override_Desc(){
+		public Format_Directive_Pragma_Region_override_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"override\": Description";
 
 			BackgroundCustomizable = false;
@@ -1018,7 +1064,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_method_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_method_Name(){
+		public Format_Directive_Pragma_Region_method_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"method\"";
 
 			BackgroundCustomizable = false;
@@ -1040,7 +1087,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_method_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_method_Desc(){
+		public Format_Directive_Pragma_Region_method_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"method\": Description";
 
 			BackgroundCustomizable = false;
@@ -1062,7 +1110,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_event_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_event_Name(){
+		public Format_Directive_Pragma_Region_event_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"event\"";
 
 			BackgroundCustomizable = false;
@@ -1084,7 +1133,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_event_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_event_Desc(){
+		public Format_Directive_Pragma_Region_event_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"event\": Description";
 
 			BackgroundCustomizable = false;
@@ -1106,7 +1156,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_getter_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_getter_Name(){
+		public Format_Directive_Pragma_Region_getter_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"getter\"";
 
 			BackgroundCustomizable = false;
@@ -1128,7 +1179,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_getter_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_getter_Desc(){
+		public Format_Directive_Pragma_Region_getter_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"getter\": Description";
 
 			BackgroundCustomizable = false;
@@ -1150,7 +1202,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_setter_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_setter_Name(){
+		public Format_Directive_Pragma_Region_setter_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"setter\"";
 
 			BackgroundCustomizable = false;
@@ -1172,7 +1225,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_setter_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_setter_Desc(){
+		public Format_Directive_Pragma_Region_setter_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"setter\": Description";
 
 			BackgroundCustomizable = false;
@@ -1194,7 +1248,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_function_Name
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_function_Name(){
+		public Format_Directive_Pragma_Region_function_Name()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"function\"";
 
 			BackgroundCustomizable = false;
@@ -1216,7 +1271,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_function_Desc
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_function_Desc(){
+		public Format_Directive_Pragma_Region_function_Desc()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"region\": \"function\": Description";
 
 			BackgroundCustomizable = false;
@@ -1238,7 +1294,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_EndRegion
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_EndRegion(){
+		public Format_Directive_Pragma_EndRegion()
+		{
 			DisplayName = "C++ Directive: \"pragma\": \"endregion\"";
 
 			BackgroundCustomizable = false;
@@ -1260,7 +1317,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_public
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_public(){
+		public Format_Directive_Pragma_Region_public()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Public";
 
 			BackgroundCustomizable = false;
@@ -1282,7 +1340,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_protected
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_protected(){
+		public Format_Directive_Pragma_Region_protected()
+		{
 			DisplayName = "C++ Directive: \"pragma\": protected";
 
 			BackgroundCustomizable = false;
@@ -1304,7 +1363,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_private
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_private(){
+		public Format_Directive_Pragma_Region_private()
+		{
 			DisplayName = "C++ Directive: \"pragma\": private";
 
 			BackgroundCustomizable = false;
@@ -1326,7 +1386,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Headers
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Headers(){
+		public Format_Directive_Pragma_Region_Headers()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Headers";
 
 			BackgroundCustomizable = false;
@@ -1348,7 +1409,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Meta
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Meta(){
+		public Format_Directive_Pragma_Region_Meta()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Meta";
 
 			BackgroundCustomizable = false;
@@ -1370,7 +1432,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Usings
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Usings(){
+		public Format_Directive_Pragma_Region_Usings()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Usings";
 
 			BackgroundCustomizable = false;
@@ -1392,7 +1455,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Macros
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Macros(){
+		public Format_Directive_Pragma_Region_Macros()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Macros";
 
 			BackgroundCustomizable = false;
@@ -1414,7 +1478,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Friends
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Friends(){
+		public Format_Directive_Pragma_Region_Friends()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Friends";
 
 			BackgroundCustomizable = false;
@@ -1436,7 +1501,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Enums
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Enums(){
+		public Format_Directive_Pragma_Region_Enums()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Enums";
 
 			BackgroundCustomizable = false;
@@ -1458,7 +1524,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Components
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Components(){
+		public Format_Directive_Pragma_Region_Components()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Components";
 
 			BackgroundCustomizable = false;
@@ -1480,7 +1547,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Concepts
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Concepts(){
+		public Format_Directive_Pragma_Region_Concepts()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Concepts";
 
 			BackgroundCustomizable = false;
@@ -1502,7 +1570,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Classes
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Classes(){
+		public Format_Directive_Pragma_Region_Classes()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Classes";
 
 			BackgroundCustomizable = false;
@@ -1524,7 +1593,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Structs
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Structs(){
+		public Format_Directive_Pragma_Region_Structs()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Structs";
 
 			BackgroundCustomizable = false;
@@ -1546,7 +1616,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Unions
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Unions(){
+		public Format_Directive_Pragma_Region_Unions()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Unions";
 
 			BackgroundCustomizable = false;
@@ -1568,7 +1639,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Members
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Members(){
+		public Format_Directive_Pragma_Region_Members()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Members";
 
 			BackgroundCustomizable = false;
@@ -1590,7 +1662,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Properties
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Properties(){
+		public Format_Directive_Pragma_Region_Properties()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Properties";
 
 			BackgroundCustomizable = false;
@@ -1612,7 +1685,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Delegates
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Delegates(){
+		public Format_Directive_Pragma_Region_Delegates()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Delegates";
 
 			BackgroundCustomizable = false;
@@ -1634,7 +1708,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Fields
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Fields(){
+		public Format_Directive_Pragma_Region_Fields()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Fields";
 
 			BackgroundCustomizable = false;
@@ -1656,7 +1731,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Specials
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Specials(){
+		public Format_Directive_Pragma_Region_Specials()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Specials";
 
 			BackgroundCustomizable = false;
@@ -1678,7 +1754,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Constructors
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Constructors(){
+		public Format_Directive_Pragma_Region_Constructors()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Constructors";
 
 			BackgroundCustomizable = false;
@@ -1700,7 +1777,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Operators
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Operators(){
+		public Format_Directive_Pragma_Region_Operators()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Operators";
 
 			BackgroundCustomizable = false;
@@ -1722,7 +1800,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Conversions
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Conversions(){
+		public Format_Directive_Pragma_Region_Conversions()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Conversions";
 
 			BackgroundCustomizable = false;
@@ -1744,7 +1823,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Overrides
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Overrides(){
+		public Format_Directive_Pragma_Region_Overrides()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Overrides";
 
 			BackgroundCustomizable = false;
@@ -1766,7 +1846,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Methods
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Methods(){
+		public Format_Directive_Pragma_Region_Methods()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Methods";
 
 			BackgroundCustomizable = false;
@@ -1788,7 +1869,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Events
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Events(){
+		public Format_Directive_Pragma_Region_Events()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Events";
 
 			BackgroundCustomizable = false;
@@ -1810,7 +1892,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Getters
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Getters(){
+		public Format_Directive_Pragma_Region_Getters()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Getters";
 
 			BackgroundCustomizable = false;
@@ -1832,7 +1915,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Setters
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Setters(){
+		public Format_Directive_Pragma_Region_Setters()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Setters";
 
 			BackgroundCustomizable = false;
@@ -1854,7 +1938,8 @@ namespace Color.Directive
 	internal sealed class Format_Directive_Pragma_Region_Functions
 		: ClassificationFormatDefinition
 	{
-		public Format_Directive_Pragma_Region_Functions(){
+		public Format_Directive_Pragma_Region_Functions()
+		{
 			DisplayName = "C++ Directive: \"pragma\": Functions";
 
 			BackgroundCustomizable = false;
