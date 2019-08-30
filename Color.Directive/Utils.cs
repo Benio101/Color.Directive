@@ -9,7 +9,8 @@ namespace Color.Directive
 		(
 			string[] Source,
 			string[] Search
-		){
+		)
+		{
 			return
 			(
 					Source.Length > 0

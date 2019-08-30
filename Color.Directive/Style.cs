@@ -14,7 +14,8 @@ namespace Color.Directive
 	[Order(After = "cppLocalVariable")]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Directive
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive()
 		{
@@ -35,7 +36,8 @@ namespace Color.Directive
 	[Order(After = Priority.High)]
 	[Order(After = "Directive")]
 	internal sealed class Format_Directive_Hash
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Hash()
 		{
@@ -56,7 +58,8 @@ namespace Color.Directive
 	[Order(After = Priority.High)]
 	[Order(After = "Directive")]
 	internal sealed class Format_Directive_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Name()
 		{
@@ -77,7 +80,8 @@ namespace Color.Directive
 	[Order(After = Priority.High)]
 	[Order(After = "Directive")]
 	internal sealed class Format_Directive_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Desc()
 		{
@@ -99,7 +103,8 @@ namespace Color.Directive
 	[Order(After = "Directive")]
 	[Order(After = "Directive.Name")]
 	internal sealed class Format_Directive_Pragma
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma()
 		{
@@ -121,7 +126,8 @@ namespace Color.Directive
 	[Order(After = "Directive")]
 	[Order(After = "Directive.Desc")]
 	internal sealed class Format_Directive_Pragma_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Desc()
 		{
@@ -143,7 +149,8 @@ namespace Color.Directive
 	[Order(After = "Directive")]
 	[Order(After = "Directive.Desc")]
 	internal sealed class Format_Directive_Pragma_Region
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region()
 		{
@@ -165,7 +172,8 @@ namespace Color.Directive
 	[Order(After = "Directive")]
 	[Order(After = "Directive.Desc")]
 	internal sealed class Format_Directive_Pragma_Region_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Desc()
 		{
@@ -188,7 +196,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_namespace_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_namespace_Name()
 		{
@@ -211,7 +220,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_namespace_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_namespace_Desc()
 		{
@@ -234,7 +244,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_class_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_class_Name()
 		{
@@ -257,7 +268,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_class_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_class_Desc()
 		{
@@ -280,7 +292,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_struct_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_struct_Name()
 		{
@@ -303,7 +316,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_struct_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_struct_Desc()
 		{
@@ -326,7 +340,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_union_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_union_Name()
 		{
@@ -349,7 +364,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_union_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_union_Desc()
 		{
@@ -372,7 +388,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_concept_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_concept_Name()
 		{
@@ -395,7 +412,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_concept_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_concept_Desc()
 		{
@@ -418,7 +436,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_macro_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_macro_Name()
 		{
@@ -441,7 +460,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_macro_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_macro_Desc()
 		{
@@ -464,7 +484,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_using_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_using_Name()
 		{
@@ -487,7 +508,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_using_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_using_Desc()
 		{
@@ -510,7 +532,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_friend_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_friend_Name()
 		{
@@ -533,7 +556,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_friend_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_friend_Desc()
 		{
@@ -556,7 +580,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_enum_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_enum_Name()
 		{
@@ -579,7 +604,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_enum_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_enum_Desc()
 		{
@@ -602,7 +628,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_component_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_component_Name()
 		{
@@ -625,7 +652,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_component_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_component_Desc()
 		{
@@ -648,7 +676,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_member_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_member_Name()
 		{
@@ -671,7 +700,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_member_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_member_Desc()
 		{
@@ -694,7 +724,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_property_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_property_Name()
 		{
@@ -717,7 +748,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_property_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_property_Desc()
 		{
@@ -740,7 +772,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_delegate_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_delegate_Name()
 		{
@@ -763,7 +796,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_delegate_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_delegate_Desc()
 		{
@@ -786,7 +820,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_field_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_field_Name()
 		{
@@ -809,7 +844,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_field_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_field_Desc()
 		{
@@ -832,7 +868,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_special_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_special_Name()
 		{
@@ -855,7 +892,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_special_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_special_Desc()
 		{
@@ -878,7 +916,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_constructor_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_constructor_Name()
 		{
@@ -901,7 +940,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_constructor_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_constructor_Desc()
 		{
@@ -924,7 +964,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_operator_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_operator_Name()
 		{
@@ -947,7 +988,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_operator_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_operator_Desc()
 		{
@@ -970,7 +1012,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_conversion_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_conversion_Name()
 		{
@@ -993,7 +1036,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_conversion_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_conversion_Desc()
 		{
@@ -1016,7 +1060,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_override_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_override_Name()
 		{
@@ -1039,7 +1084,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_override_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_override_Desc()
 		{
@@ -1062,7 +1108,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_method_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_method_Name()
 		{
@@ -1085,7 +1132,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_method_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_method_Desc()
 		{
@@ -1108,7 +1156,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_event_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_event_Name()
 		{
@@ -1131,7 +1180,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_event_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_event_Desc()
 		{
@@ -1154,7 +1204,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_getter_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_getter_Name()
 		{
@@ -1177,7 +1228,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_getter_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_getter_Desc()
 		{
@@ -1200,7 +1252,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_setter_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_setter_Name()
 		{
@@ -1223,7 +1276,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_setter_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_setter_Desc()
 		{
@@ -1246,7 +1300,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_function_Name
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_function_Name()
 		{
@@ -1269,7 +1324,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_function_Desc
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_function_Desc()
 		{
@@ -1292,7 +1348,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_EndRegion
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_EndRegion()
 		{
@@ -1315,7 +1372,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_public
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_public()
 		{
@@ -1338,7 +1396,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_protected
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_protected()
 		{
@@ -1361,7 +1420,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_private
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_private()
 		{
@@ -1384,7 +1444,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Headers
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Headers()
 		{
@@ -1407,7 +1468,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Meta
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Meta()
 		{
@@ -1430,7 +1492,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Usings
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Usings()
 		{
@@ -1453,7 +1516,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Macros
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Macros()
 		{
@@ -1476,7 +1540,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Friends
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Friends()
 		{
@@ -1499,7 +1564,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Enums
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Enums()
 		{
@@ -1522,7 +1588,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Components
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Components()
 		{
@@ -1545,7 +1612,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Concepts
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Concepts()
 		{
@@ -1568,7 +1636,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Classes
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Classes()
 		{
@@ -1591,7 +1660,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Structs
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Structs()
 		{
@@ -1614,7 +1684,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Unions
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Unions()
 		{
@@ -1637,7 +1708,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Members
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Members()
 		{
@@ -1660,7 +1732,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Properties
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Properties()
 		{
@@ -1683,7 +1756,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Delegates
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Delegates()
 		{
@@ -1706,7 +1780,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Fields
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Fields()
 		{
@@ -1729,7 +1804,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Specials
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Specials()
 		{
@@ -1752,7 +1828,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Constructors
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Constructors()
 		{
@@ -1775,7 +1852,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Operators
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Operators()
 		{
@@ -1798,7 +1876,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Conversions
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Conversions()
 		{
@@ -1821,7 +1900,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Overrides
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Overrides()
 		{
@@ -1844,7 +1924,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Methods
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Methods()
 		{
@@ -1867,7 +1948,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Events
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Events()
 		{
@@ -1890,7 +1972,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Getters
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Getters()
 		{
@@ -1913,7 +1996,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Setters
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Setters()
 		{
@@ -1936,7 +2020,8 @@ namespace Color.Directive
 	[Order(After = "Directive.Desc")]
 	[Order(After = "Directive.Pragma.Region")]
 	internal sealed class Format_Directive_Pragma_Region_Functions
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Directive_Pragma_Region_Functions()
 		{
