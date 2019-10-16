@@ -3,8 +3,8 @@
 
 ## Status
 | Branch | Build Status
-| ---   | ---
-| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/4c42ruj6pcx6sowm/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-directive/branch/master)
+| ---    | ---
+| [`master`](https://github.com/Benio101/Color.Directive/tree/master) | [![Build status](https://ci.appveyor.com/api/projects/status/4c42ruj6pcx6sowm/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-directive/branch/master)
 
 ## Description
 Extension adds options to overwrite colors of certain C++ Directives.<br>
