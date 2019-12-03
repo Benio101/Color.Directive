@@ -337,8 +337,9 @@ namespace Color.Directive
 									));
 								}
 
-								foreach (var Group in Meta.RegionGroups)
+								foreach (var RegionGroup in RegionGroups)
 								{
+									var Group = RegionGroup.Key;
 									var GroupRegex = Group;
 									if (GroupRegex == "Enums")
 									{
@@ -366,7 +367,7 @@ namespace Color.Directive
 												+	GroupMatch.Groups["Group"].Index,
 
 												GroupMatch.Groups["Group"].Length
-											)), RegionGroups[Group]
+											)), RegionGroup.Value
 										));
 									}
 								}
