@@ -17,7 +17,6 @@
 			private  static readonly Color Orange         = Color.FromRgb(224, 176, 128);
 			private  static readonly Color Pink           = Color.FromRgb(224, 128, 224);
 			private  static readonly Color Green          = Color.FromRgb(176, 224, 128);
-			private  static readonly Color GreenDark      = Color.FromRgb(128, 176,  96);
 			private  static readonly Color Blue           = Color.FromRgb(128, 176, 224);
 			private  static readonly Color Turquoise      = Color.FromRgb(128, 224, 176);
 			private  static readonly Color Purple         = Color.FromRgb(176, 128, 224);
@@ -29,7 +28,6 @@
 			internal static readonly Color Type           = Green;
 			internal static readonly Color Keyword        = Blue;
 			internal static readonly Color Namespace      = Gray;
-			internal static readonly Color Access         = GreenDark;
 			internal static readonly Color Member         = Yellow;
 			internal static readonly Color Static         = Red;
 			internal static readonly Color Macro          = Purple;
@@ -41,6 +39,10 @@
 			internal static readonly Color Inherit        = DarkYellow;
 			internal static readonly Color Object         = Orange;
 			internal static readonly Color Enum           = Red;
+
+			internal static readonly Color Public         = Color.FromRgb(128, 176,  96);
+			internal static readonly Color Protected      = Color.FromRgb(152, 152,  96);
+			internal static readonly Color Private        = Color.FromRgb(176, 128,  96);
 		}
 	}
 }

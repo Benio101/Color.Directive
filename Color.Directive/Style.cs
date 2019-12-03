@@ -1980,7 +1980,7 @@ namespace Color.Directive
 			DisplayName = "C++ Directive: \"pragma\": Public";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Public;
 		}
 	}
 
@@ -2004,7 +2004,7 @@ namespace Color.Directive
 			DisplayName = "C++ Directive: \"pragma\": protected";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Protected;
 		}
 	}
 
@@ -2028,7 +2028,7 @@ namespace Color.Directive
 			DisplayName = "C++ Directive: \"pragma\": private";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Private;
 		}
 	}
 }

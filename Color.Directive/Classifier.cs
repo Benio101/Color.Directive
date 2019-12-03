@@ -81,6 +81,10 @@ namespace Color.Directive
 
 			foreach (var Group in Meta.RegionGroups)
 				RegionGroups.Add(Group, Registry.GetClassificationType("Directive.Pragma.Region." + Group));
+
+			RegionGroups.Add("Public",    Directive_Pragma_public);
+			RegionGroups.Add("Protected", Directive_Pragma_protected);
+			RegionGroups.Add("Private",   Directive_Pragma_private);
 		}
 
 		public IList<ClassificationSpan> GetClassificationSpans(SnapshotSpan Span)
